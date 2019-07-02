@@ -67,8 +67,6 @@ unsigned char nCRC;       // calculated check sum to ensure PROM integrity
 uint32_t D1 = 0, D2 = 0;  // raw MS5837 pressure and temperature data
 double dT, OFFSET, SENS, TT2, OFFSET2, SENS2;  // First order and second order corrections for raw MS5837 temperature and pressure data
     
-int16_t tempCount;            // temperature raw count output
-float   temperature;          // Stores the MPU9250 gyro internal chip temperature in degrees Celsius
 double Temperature, Pressure; // stores MS5837 pressures sensor pressure and temperature
 float fluidDensity = 1029.0f; // kg/m^3 for seawater
 
